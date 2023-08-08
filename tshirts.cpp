@@ -14,9 +14,11 @@ char size(int cms) {
 }
 
 int main() {
-    assert(size(37) == 'S');
+    assert(size(37) == 'S'); 
+	assert(size(38) == 'M');
     assert(size(40) == 'M');
-    assert(size(43) == 'L');
+	assert(size(42) == 'M');
+    assert(size(43) == 'L');				//till 38
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
