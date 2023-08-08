@@ -1,10 +1,7 @@
 #pragma once
 
 
-namespace WeatherSpace
-{
-	void TestRainy();
+void TestRainy();
 
-	void TestHighPrecipitation();
-}
+void TestHighPrecipitation();
 

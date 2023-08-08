@@ -8,8 +8,8 @@ using namespace std;
 
 
 int main() {
-    WeatherSpace::TestRainy();
-    WeatherSpace::TestHighPrecipitation();
+    TestRainy();
+    TestHighPrecipitation();
     cout << "All is well (maybe)\n";
     return 0;
 }
