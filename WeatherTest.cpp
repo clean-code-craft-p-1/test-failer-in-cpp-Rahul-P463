@@ -2,7 +2,7 @@
 #include<iostream>
 #include <assert.h>
 #include "SensorStub.h"
-#include "WeatherReport.h"
+#include "WReport.h"
 #include "RainSensorStub.h"
 #include <string>
 using namespace std;
@@ -25,5 +25,4 @@ void WeatherSpace::TestHighPrecipitation()
 	// (function returns Sunny day, it should predict rain)
 	string report = Report(sensor);
 	assert(report.find("rain") != string::npos);
-	assert(report.length() > 0);
 }
