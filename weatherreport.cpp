@@ -68,7 +68,7 @@ namespace WeatherSpace
 			else if (sensor.WindSpeedKMPH() > 50)
 				report = "Alert, Stormy with heavy rain";
 			else
-				report = "Rainy";
+				report = "rainy";
 		}
 		return report;
 	}
