@@ -63,11 +63,11 @@ namespace WeatherSpace
 
 		if (sensor.TemperatureInC() > 25)
 		{
-			if (precipitation >= 20 && precipitation < 60)
+			if (precipitation >= 20 && precipitation <= 60)
 				report = "Partly Cloudy";
-			else if (sensor.WindSpeedKMPH() > 50)
+			else if (sensor.WindSpeedKMPH() >= 50)
 				report = "Alert, Stormy with heavy rain";
-			else
+			else if(precipitation > 60 && sensor.WindSpeedKMPH() < 50)
 				report = "rainy";
 		}
 		return report;
